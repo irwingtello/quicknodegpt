@@ -44,7 +44,7 @@ app.get('/api/fetch', async (req, res) => {
   }
 });
 
-app.get('/api/infoCollection', async (req, res) => {
+app.post('/api/infoCollection', async (req, res) => {
    try{
     const {collection, page } = req.body;
 
