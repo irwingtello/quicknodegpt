@@ -10,7 +10,7 @@ const PORT="3000";
 // Middleware to parse JSON request bodies
 app.use(bodyParser.json());
 
-app.get('/api/fetch', async (req, res) => {
+app.post('/api/fetch', async (req, res) => {
   try{
     const { wallet, page,collection } = req.body;
     const response = await axios.post(
